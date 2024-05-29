@@ -33,23 +33,39 @@
 
 
 
-function add(a:number, b:number){
-    return a + b
+// function add(a:number, b:number){
+//     return a + b
+// }
+
+// const addLambda = (a:number, b:number) => a + b
+
+// const sum = add(3,4)
+// const sumLambda = addLambda (3,4)
+
+
+
+// const multiply = (a:number, b?:number) => {
+//     if (b) {
+//         return a * b 
+//     }
+
+//   return a * 2  
+// }
+
+// console.log(multiply(3))
+
+
+
+interface Car {
+    make: string;
+    model: string;
+    year?: number;
 }
 
-const addLambda = (a:number, b:number) => a + b
+const myCar: Car = {
+    make: "Suzuki",
+    model: "Swift Sport",
+    year: 2018
+};
 
-const sum = add(3,4)
-const sumLambda = addLambda (3,4)
-
-
-
-const multiply = (a:number, b?:number) => {
-    if (b) {
-        return a * b 
-    }
-
-  return a * 2  
-}
-
-console.log(multiply(3))
+console.log(myCar)
